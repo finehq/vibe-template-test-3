@@ -1,0 +1,24 @@
+{
+    "name": "vibe-template-test-3",
+    "compatibility_date": "2025-04-03",
+    "assets": {
+        "not_found_handling": "single-page-application"
+    },
+    "r2_buckets": [
+        {
+            "binding": "STORAGE",
+            "bucket_name": "vibe-template-test-3"
+        }
+    ],
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "vibe-template-test-3",
+            "database_id": "84ca74b0-cbb7-4875-a05a-68a8f93fa887",
+            "migrations_table": "_d1_migrations",
+            "migrations_dir": "migrations"
+        }
+    ],
+    "main": "./worker/index.ts"
+}
+// wrangler d1 execute vibe-template-test --file=node_modules/@fine-dev/vibe-backend/schema.sql
